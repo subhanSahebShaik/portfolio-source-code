@@ -1,0 +1,45 @@
+.certificatesContainer{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(#fff,#00B4D8);
+}
+
+.certificatesContainer .text{
+    margin-top: 10vh;
+    display: none;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.images img{
+    height: calc(75vh/3);
+}
+
+@media screen and (max-width:1000px) {
+    .certificatesContainer .text{
+        display: block;
+        width: 80vw;
+        text-align: justify;
+        font-family: "Sofia";
+    }
+    .text ul{
+        list-style-type: none;
+    }
+    li::before{
+        content: "\00BB\ ";
+        color: blue;
+    }
+    .text ul li b{
+        font-weight: normal;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .certificatesContainer .images{
+        display: none;
+    }
+}

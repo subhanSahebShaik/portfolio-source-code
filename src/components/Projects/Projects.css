@@ -1,0 +1,63 @@
+.projectsContainer{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: radial-gradient(#fff,#00B4D8);
+    font-family: "Sofia";
+}
+
+.projectsContainer .project{
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    justify-content: space-between;
+}
+
+.projectsContainer .project img{
+    height: 100px;
+    border-radius: 50%;
+}
+
+.projectsContainer .project div{
+    width: 75%;
+}
+
+.projectsContainer .project div p span{
+    font-weight: bold;
+    font-family: "Playfair Display";
+}
+
+.projectsContainer .project div div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projectsContainer .project div div a{
+    font-weight: bolder;
+    font-size: 13px;
+    font-family: monospace, sans-serif;
+    color: darkblue;
+}
+
+@media screen and (max-width:800px) {
+    .projectsContainer  .project{
+        width: 80vw;
+        text-align: justify;
+    }
+    .projectsContainer .project img{
+        display: none;
+    }
+    .projectsContainer .project div{
+        width: auto;
+    }
+    .projectsContainer .project div p span{
+        font-weight: bold;
+        font-family: "Playfair Display SC";
+    }
+    .projectsContainer .project div div a{
+        font-size: 10px;
+    }
+}

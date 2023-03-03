@@ -1,0 +1,29 @@
+.eduContainer{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: radial-gradient(#fff,#00B4D8);
+}
+
+.eduContainer p{
+    font-family: "Sofia";
+    font-size: 20px;
+    text-align: center;
+}
+
+.eduContainer p span{
+    font-weight: bolder;
+    font-family: "Playfair Display SC";
+    font-size: 35px;
+}
+
+@media screen and (max-width:1000px) {
+    .eduContainer p{
+        font-size: 15px;
+    }
+    .eduContainer p span{
+        font-size: 25px;
+    }
+}

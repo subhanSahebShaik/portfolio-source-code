@@ -1,0 +1,51 @@
+.profileContainer{
+    height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: radial-gradient(#fff,#00B4D8);
+}
+
+.profileContainer .details p{
+    font-family: 'Playfair Display';
+}
+
+.profileContainer .details p #hello{
+    font-size: 30px;
+}
+
+.profileContainer .details p #name{
+    font-size: 60px;
+}
+
+.profileContainer .details p:hover{
+    color: darkblue;
+    text-shadow: 10px 10px 20px aqua;
+    transition: 1s;
+}
+
+.profileContainer .photo img{
+    height: 50vh;
+    border-radius: 50%;
+    background-image: radial-gradient(#fff,#0077B6);
+}
+
+@media screen and (max-width:1000px) {
+    .profileContainer{
+        flex-direction: column-reverse;
+    }
+    .profileContainer .photo img{
+        height: 30vh;
+    }
+    .profileContainer .details p{
+        font-family: 'Playfair Display SC';
+        font-size: 10px;
+    }
+    .profileContainer .details p #hello{
+        font-size:15px;
+    }
+    .profileContainer .details p #name{
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,58 @@
+.navBar{
+    max-height: calc(0.16*100vh);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to top, transparent, #ffffff88, transparent);
+    border-top: 2px solid #FF5A5F;
+    position: fixed;
+    font-family: "Playfair Display SC";
+}
+
+.navBar .navImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 18vw;
+    text-decoration: none;
+    color: black;
+}
+
+.navBar .navImage i{
+    font-size: calc(0.04*100vh);
+    padding: 10px 0px;
+    color: black;
+}
+
+.navBar .navImage p{
+    display: none;
+}
+
+.navBar .navImage:hover > p{
+    display: block;
+}
+
+.navBar span{
+    text-decoration: none;
+    color: black;
+    font-family: Playfair;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+}
+
+a{
+    color: black;
+}
+
+@media screen and (max-width:1000px) {
+    .navBar .navImage i{
+        font-size: calc(0.03*100vh);
+    }
+    .navBar .navImage > p{
+        display: block;
+        font-size: calc(0.01*100vh);
+    }
+}

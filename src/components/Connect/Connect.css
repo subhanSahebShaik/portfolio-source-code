@@ -1,0 +1,24 @@
+.connectContainer{
+    height: 100vh;
+    display: flex;
+    background-image: radial-gradient(#fff,#00B4D8);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.connectContainer p{
+    font-family: "Sofia";
+}
+
+.connectContainer .icons{
+    display: flex;
+    gap: 50px;
+    font-size: 25px;
+}
+
+@media screen and (max-width:1000px) {
+    .connectContainer .icons{
+        gap: 20px;
+    }
+}
